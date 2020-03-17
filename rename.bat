@@ -24,7 +24,7 @@ ECHO renameing...
 ECHO.
 SET /a index=0
 FOR %%i in (*.!suffix!) do (
-    SET name=!prefix!0!index!.!suffix!
+    SET name=!prefix!!index!.!suffix!
     REN "%%i" !name!
     SET /a index=!index!+1
 )
